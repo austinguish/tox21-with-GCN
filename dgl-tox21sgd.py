@@ -180,7 +180,7 @@ def main(args):
         classifier_hidden_feats=args['n_hidden']).to(args['device'])
     loss_criterion = BCEWithLogitsLoss(
         pos_weight=torch.tensor(dataset.task_pos_weights).to(args['device']), reduction='none')
-    optimizer = rmsprop(model.parameters())
+    optimizer = torch.optim.SGD(model.parameters(),lr=0.01)
     stopper = EarlyStopper(args['patience'])
 
     for epoch in range(args['n_epochs']):
