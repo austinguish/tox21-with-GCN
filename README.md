@@ -17,5 +17,5 @@ use folowing command to set a conda virtual env.
 ## run
 `$conda activate DGL_py36_pytorch1.2_chem`
 
-`$Python test.py`
+`$python test.py`
 
