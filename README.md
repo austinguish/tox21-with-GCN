@@ -13,7 +13,7 @@ use folowing command to set a conda virtual env.
 
 `$conda install --name DGL_py36_pytorch1.2_chem --update-deps --force libpng`
 
-`$conda install --name DGL_py36_pytorch1.2_chem --update-deps --force -c conda-forge rdkit=2018.09.3`
+`$conda install --name DGL_py36_pytorch1.2_chem --update-deps --force -c conda-forge rdkit`
 ## run
 `$conda activate DGL_py36_pytorch1.2_chem`
 
